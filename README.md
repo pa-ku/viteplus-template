@@ -4,19 +4,19 @@
 
 ### Create the project.
 
-```
+```shell
 pnpm dlx degit pa-ku/viteplus-template.git app-name
 ```
 
 ### Access the project directory.
 
-```
-cd app-name``
+```shell
+cd app-name
 ```
 
 ### Install dependencies.
 
-```
+```shell
 pnpm install
 ```
 
