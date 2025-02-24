@@ -2,15 +2,14 @@
   "name": "vite-plus-template",
   "private": true,
   "version": "0.0.0",
+  "description": "",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "build": "tsc",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "@tailwindcss/vite": "^4.0.8",
