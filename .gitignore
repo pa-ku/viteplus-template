@@ -26,8 +26,8 @@ dist-ssr
 
 
 #Don't ignore
-!./src/components/
-!./src/components/ui
+!src/components/
+!src/components/ui
 !./src/context/
 !./src/asets/
 !./src/data/
