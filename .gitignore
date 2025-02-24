@@ -23,15 +23,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-
-#Don't ignore
-!src/components/
-!src/components/ui
-!./src/context/
-!./src/asets/
-!./src/data/
-!./src/hooks/
-!./src/pages/
-!./src/utils/
-!./src/lib/
