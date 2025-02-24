@@ -58,5 +58,10 @@
     "#data/*": [
       "./src/data/*"
     ]
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
   }
 }
