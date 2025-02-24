@@ -1,4 +1,4 @@
-# ⚡VitePlus Template
+<h1 align="center">⚡VitePlus Template</h1>
 
 `Vite` `TS` `React` `Vitest` `Tailwind` `Lucide` `Eslint (Common)` `Prettier (With the tailwind pluggin)`
 
