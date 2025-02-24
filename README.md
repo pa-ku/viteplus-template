@@ -1,4 +1,4 @@
-# Vite+ Template
+# ⚡VitePlus Template
 
 `Vite` `TS` `React` `Vitest` `Tailwind` `Lucide` `Eslint (Common)` `Prettier (With the tailwind pluggin)`
 
@@ -19,8 +19,8 @@ cd app-name``
 ```
 pnpm install
 ```
-
-## Relative Paths
+<br></br>
+## 🌐 Relative Paths
 Relative paths allow importing files without using long and repetitive routes (../../components/Button), making code organization easier. 
 
 
