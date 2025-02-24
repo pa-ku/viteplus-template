@@ -5,7 +5,7 @@
 ### Create the project.
 
 ```
-pnpm dlx degit pa-ku/vite-react-template.git app-name
+pnpm dlx degit pa-ku/viteplus-template.git app-name
 ```
 
 ### Access the project directory.
