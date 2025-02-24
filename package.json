@@ -38,10 +38,19 @@
       "./src/*"
     ],
     "#components/*": [
-      "./src/components*"
+      "./src/components/*"
     ],
     "#assets/*": [
-      "./src/assets*"
+      "./src/assets/*"
+    ],
+    "#pages/*": [
+      "./src/pages/*"
+    ],
+    "#hooks/*": [
+      "./src/hooks/*"
+    ],
+    "#context/*": [
+      "./src/context/*"
     ]
   }
 }

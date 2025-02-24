@@ -1,5 +1,14 @@
 {
   "files": [],
+  "baseUrl": ".",
+  "paths": {
+    "#src/*": ["./src/*"],
+    "#assets/*": ["./src/assets/*"],
+    "#components/*": ["./src/components/*"],
+    "#hooks/*": ["./src/hooks/*"],
+    "#pages/*": ["./src/pages/*"],
+    "#context/*": ["./src/context/*"]
+  },
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
