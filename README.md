@@ -2,19 +2,19 @@
 
 `Vite` `TS` `React` `Vitest` `Tailwind` `Lucide` `Eslint (Common)` `Prettier (With the tailwind pluggin)`
 
-### Create the project.
+#### Create the project.
 
 ```shell
 pnpm dlx degit pa-ku/viteplus-template.git app-name
 ```
 
-### Access the project directory.
+#### Access the project directory.
 
 ```shell
 cd app-name
 ```
 
-### Install dependencies.
+#### Install dependencies.
 
 ```shell
 pnpm install
@@ -26,13 +26,14 @@ pnpm install
 
 Relative paths allow importing files without using long and repetitive routes (../../components/Button), making code organization easier.
 
-### How to Use Them
+
+#### How to Use Them
 
 ```js
 import Header from "#components/Header";
 ```
 
-### Dynamic Paths Added
+#### Dynamic Paths Added
 
 `#src`
 `#assets`
@@ -42,6 +43,6 @@ import Header from "#components/Header";
 `#utils`
 `#context`
 `#data`
-
+<br></br>
 > [!IMPORTANT]
 > In this project, aliases are configured in tsconfig.app.json and package.json, allowing them to be used in both TypeScript and Node.
