@@ -59,7 +59,7 @@
       "./src/data/*"
     ],
     "#lib/*": [
-      "./src/lib/*"
+      "./src/libs/*"
     ]
   },
   "prettier": {

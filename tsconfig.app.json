@@ -6,7 +6,6 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-
     /* paths */
     "baseUrl": ".",
     "paths": {
@@ -18,7 +17,7 @@
       "#utils/*": ["./src/utils/*"],
       "#context/*": ["./src/context/*"],
       "#data/*": ["./src/context/*"],
-      "#lib/*": ["./src/lib/*"]
+      "#libs/*": ["./src/libs/*"]
     },
 
     /* Bundler mode */
@@ -36,5 +35,6 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }
