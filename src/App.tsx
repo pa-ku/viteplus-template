@@ -1,6 +1,7 @@
 import { Copy } from "lucide-react";
 import { CopyCheck } from "lucide-react";
 import { useState } from "react";
+import viteimg from "/vite.webp";
 
 export default function App() {
   const [copied, setCopied] = useState(false);
@@ -8,10 +9,10 @@ export default function App() {
   return (
     <>
       <main className="flex h-screen w-full flex-col items-center justify-center gap-10 bg-gradient-to-tl from-sky-800 to-sky-300">
-        <h1 className="drop-shadow-white text-6xl font-bold text-white">
+        <h1 className="drop-shadow-white flex items-center justify-center gap-4 text-6xl font-bold text-white">
           VitePlus
         </h1>
-        <p className="flex items-center justify-center gap-2 rounded-lg bg-sky-800 px-3 py-1 text-sky-300">
+        <p className="border-sky-900 flex items-center justify-center gap-2 rounded-lg border-2 bg-sky-800/90 px-3 py-2 text-sky-300">
           pnpm dlx degit pa-ku/viteplus-template.git app-name
           <button
             onClick={() => {
