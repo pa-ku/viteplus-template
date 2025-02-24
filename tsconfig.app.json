@@ -17,7 +17,8 @@
       "#pages/*": ["./src/pages/*"],
       "#utils/*": ["./src/utils/*"],
       "#context/*": ["./src/context/*"],
-      "#data/*": ["./src/context/*"]
+      "#data/*": ["./src/context/*"],
+      "#lib/*": ["./src/lib/*"]
     },
 
     /* Bundler mode */

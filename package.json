@@ -57,6 +57,9 @@
     ],
     "#data/*": [
       "./src/data/*"
+    ],
+    "#lib/*": [
+      "./src/lib/*"
     ]
   },
   "prettier": {
