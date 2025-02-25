@@ -26,11 +26,10 @@ pnpm install
 
 Relative paths allow importing files without using long and repetitive routes (../../components/Button), making code organization easier.
 
-
 #### How to Use Them
 
 ```js
-import Header from "#components/Header";
+import Header from "#components/Header"
 ```
 
 #### Dynamic Paths Added
@@ -44,5 +43,6 @@ import Header from "#components/Header";
 `#context`
 `#data`
 <br></br>
+
 > [!IMPORTANT]
 > In this project, aliases are configured in tsconfig.app.json and package.json, allowing them to be used in both TypeScript and Node.

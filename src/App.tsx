@@ -1,10 +1,9 @@
-import { Copy } from "lucide-react";
-import { CopyCheck } from "lucide-react";
-import { useState } from "react";
-import viteimg from "/vite.webp";
+import { Copy } from "lucide-react"
+import { CopyCheck } from "lucide-react"
+import { useState } from "react"
 
 export default function App() {
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState(false)
 
   return (
     <>
@@ -12,7 +11,7 @@ export default function App() {
         <h1 className="drop-shadow-white flex items-center justify-center gap-4 text-6xl font-bold text-white">
           VitePlus
         </h1>
-        <p className="border-sky-900 flex items-center justify-center gap-2 rounded-lg border-2 bg-sky-800/90 px-3 py-2 text-sky-300">
+        <p className="flex items-center justify-center gap-2 rounded-lg border-2 border-sky-900 bg-sky-800/90 px-3 py-2 text-sky-300">
           pnpm dlx degit pa-ku/viteplus-template.git app-name
           <button
             onClick={() => {
@@ -21,14 +20,14 @@ export default function App() {
                   "pnpm dlx degit pa-ku/viteplus-template.git app-name",
                 )
                 .then(() => {
-                  setCopied(true);
+                  setCopied(true)
                   setTimeout(() => {
-                    setCopied(false);
-                  }, 2000);
+                    setCopied(false)
+                  }, 2000)
                 })
                 .catch((err) => {
-                  console.error("Error al copiar al portapapeles: ", err);
-                });
+                  console.error("Error al copiar al portapapeles: ", err)
+                })
             }}
             className="z-10 my-auto cursor-pointer"
           >
@@ -59,5 +58,5 @@ export default function App() {
         </ol>
       </main>
     </>
-  );
+  )
 }
