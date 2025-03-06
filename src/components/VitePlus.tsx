@@ -18,7 +18,7 @@ export default function VitePlus() {
   ]
   return (
     <>
-      <main className="flex h-screen w-full flex-col items-center justify-center gap-10 bg-gradient-to-tl from-sky-800 to-sky-300">
+      <main className="flex h-full min-h-screen w-full flex-col items-center justify-center gap-10 bg-gradient-to-tl from-sky-800 to-sky-300 px-3 py-20">
         <section className="flex w-full flex-col items-center justify-center gap-10">
           <h1 className="drop-shadow-white flex items-center justify-center gap-4 text-6xl font-bold text-white">
             VitePlus
@@ -36,7 +36,7 @@ export default function VitePlus() {
               textToCopy={"pnpm dlx degit pa-ku/viteplus-template.git app-name"}
             ></CopyButton>
           </span>
-          <ul className="flex flex-wrap gap-5 drop-shadow-xl">
+          <ul className="flex flex-wrap items-center justify-center gap-5 drop-shadow-xl">
             {stack.map(({ label, path }) => (
               <a
                 className="z-10 w-42 cursor-pointer rounded-xl border-2 border-white/50 bg-white/30 px-3 py-2 text-center text-xl text-white shadow-lg shadow-white/20 duration-300 hover:-translate-y-1"
@@ -56,23 +56,13 @@ export default function VitePlus() {
           </h2>
           <p className="text-sky-200">
             Relative paths allow importing files without using long and
-            repetitive routes
+            repetitive routes. <br /> Aliases are configured in
+            tsconfig.app.json and vite.config.json
           </p>
-          <p>
-            Aliases are configured in tsconfig.app.json and vite.config.json
+
+          <p className="flex w-fit items-center justify-center gap-2 rounded-lg border-2 border-sky-900 bg-sky-800/90 px-3 py-2 text-sky-300">
+            import Button from @/components/ui/Button
           </p>
-          <div>
-            <span className="text-sky-200">From</span>
-            <p className="flex w-fit items-center justify-center gap-2 rounded-lg border-2 border-sky-900 bg-sky-800/90 px-3 py-2 text-sky-300">
-              import Button from ../../components/Button
-            </p>
-          </div>
-          <div>
-            <span className="text-sky-200">To</span>
-            <p className="flex w-fit items-center justify-center gap-2 rounded-lg border-2 border-sky-900 bg-sky-800/90 px-3 py-2 text-sky-300">
-              import Button from @/components/ui/Button
-            </p>
-          </div>
         </section>
 
         <section className="flex flex-col gap-5">
@@ -80,7 +70,7 @@ export default function VitePlus() {
             More Useful packages
           </h2>
 
-          <ul className="flex flex-wrap gap-5 drop-shadow-xl">
+          <ul className="flex flex-wrap items-center justify-center gap-5 drop-shadow-xl">
             {usefulPkgs.map(({ label, pnpm }) => (
               <div className="text-center text-sky-200" key={label}>
                 <p className="pb-3 font-bold">{label}</p>
