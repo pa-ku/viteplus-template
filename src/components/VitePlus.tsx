@@ -7,8 +7,8 @@ export default function VitePlus() {
     { label: "Tailwind", path: "https://tailwindcss.com/" },
     { label: "Prettier", path: "https://prettier.io/" },
     { label: "Vitest", path: "https://vitest.dev/" },
-    { label: "Eslint", path: "" },
-    { label: "TablerIcons", path: "https://tabler.io/icons" },
+    { label: "Eslint", path: "https://eslint.org/" },
+    { label: "Tabler", path: "https://tabler.io/icons" },
   ]
 
   const usefulPkgs = [
@@ -20,18 +20,17 @@ export default function VitePlus() {
     <>
       <main className="flex h-full min-h-screen w-full flex-col items-center justify-center gap-10 bg-gradient-to-tl from-sky-800 to-sky-300 px-3 py-20">
         <section className="flex w-full flex-col items-center justify-center gap-10">
-          <h1 className="drop-shadow-white flex items-center justify-center gap-4 text-6xl font-bold text-white">
+          <h1 className="drop-shadow-white flex items-center justify-center gap-4 text-5xl font-bold text-white">
             VitePlus
           </h1>
-          <span className="flex gap-2">
+          <span className="flex gap-1">
             <a
               href={"https://github.com/pa-ku/viteplus-template"}
               target="_Blank"
-              className="flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 border-sky-900 bg-sky-800/90 px-3 py-2 text-sky-300"
+              className="flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 border-sky-900 bg-sky-800/90 px-2 py-2 text-sky-300"
             >
-              <IconBrandGithub size={24} />
+              <IconBrandGithub size={26} />
             </a>
-
             <CopyButton
               textToCopy={"pnpm dlx degit pa-ku/viteplus-template.git app-name"}
             ></CopyButton>
@@ -39,7 +38,7 @@ export default function VitePlus() {
           <ul className="flex flex-wrap items-center justify-center gap-5 drop-shadow-xl">
             {stack.map(({ label, path }) => (
               <a
-                className="z-10 w-42 cursor-pointer rounded-xl border-2 border-white/50 bg-white/30 px-3 py-2 text-center text-xl text-white shadow-lg shadow-white/20 duration-300 hover:-translate-y-1"
+                className="z-10 w-32 cursor-pointer rounded-xl border-2 border-white/50 bg-white/30 px-3 py-2 text-center text-lg text-white shadow-lg shadow-white/20 duration-300 hover:-translate-y-1"
                 key={label}
                 target="_Blank"
                 href={path}
@@ -50,23 +49,23 @@ export default function VitePlus() {
           </ul>
         </section>
 
-        <section className="flex flex-col items-center gap-5">
-          <h2 className="drop-shadow-white flex items-center justify-center gap-4 pt-10 text-3xl font-bold text-white">
+        <section className="flex flex-col items-center gap-3">
+          <h2 className="drop-shadow-white flex items-center justify-center gap-4 pt-10 text-2xl font-bold text-white">
             Relative Imports
           </h2>
-          <p className="text-sky-200">
+          <p className="text-sm text-sky-200">
             Relative paths allow importing files without using long and
             repetitive routes. <br /> Aliases are configured in
             tsconfig.app.json and vite.config.json
           </p>
 
-          <p className="flex w-fit items-center justify-center gap-2 rounded-lg border-2 border-sky-900 bg-sky-800/90 px-3 py-2 text-sky-300">
-            import Button from @/components/ui/Button
+          <p className="flex w-fit items-center justify-center gap-2 rounded-lg border-2 border-sky-900 bg-sky-800/90 px-3 py-2 text-sky-200 [&_span]:text-sky-300">
+            <span>import</span> Button <span>from</span> @/components/ui/Button
           </p>
         </section>
 
         <section className="flex flex-col gap-5">
-          <h2 className="drop-shadow-white flex items-center justify-center gap-4 pt-10 text-3xl font-bold text-white">
+          <h2 className="drop-shadow-white flex items-center justify-center gap-4 pt-10 text-2xl font-bold text-white">
             More Useful packages
           </h2>
 
@@ -88,7 +87,7 @@ function CopyButton({ textToCopy }: { textToCopy: string }) {
   const [copied, setCopied] = useState(false)
 
   return (
-    <div className="flex items-center justify-center gap-2 rounded-lg border-2 border-sky-900 bg-sky-800/90 px-3 py-2 text-sky-300">
+    <div className="flex items-center justify-center gap-2 rounded-lg border-2 border-sky-900 bg-sky-800/90 px-3 py-2 text-sky-200">
       <p>{textToCopy}</p>
       <button
         onClick={() => {
