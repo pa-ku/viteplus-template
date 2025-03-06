@@ -27,7 +27,7 @@ export default function VitePlus() {
             <a
               href={"https://github.com/pa-ku/viteplus-template"}
               target="_Blank"
-              className="flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 border-sky-900 bg-sky-800/90 px-2 py-2 text-sky-300"
+              className="flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 border-sky-900 bg-sky-800/90 px-2 py-2 text-sky-200"
             >
               <IconBrandGithub size={26} />
             </a>
