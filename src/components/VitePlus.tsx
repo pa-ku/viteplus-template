@@ -1,8 +1,7 @@
 import { IconBrandGithub, IconCopy, IconCopyCheck } from "@tabler/icons-react"
 import { useState } from "react"
 export default function VitePlus() {
-
-  const monorepo = 'pnpm dlx degit pa-ku/viteplus-monorepo-template.git .'
+  const monorepo = "pnpm dlx degit pa-ku/viteplus-monorepo-template.git ."
 
   const stack = [
     { label: "TS", path: "https://www.typescriptlang.org/" },
@@ -21,7 +20,7 @@ export default function VitePlus() {
   ]
   return (
     <>
-      <main className="flex h-full min-h-screen w-full flex-col items-center justify-center gap-10 bg-gradient-to-tl from-sky-800 to-sky-300 px-3 py-20">
+      <main className="from-primary to-primary-dark flex h-full min-h-screen w-full flex-col items-center justify-center gap-10 bg-gradient-to-tl px-3 py-20">
         <section className="flex w-full flex-col items-center justify-center gap-10">
           <h1 className="drop-shadow-white flex items-center justify-center gap-4 text-5xl font-bold text-white">
             VitePlus
@@ -30,7 +29,7 @@ export default function VitePlus() {
             <a
               href={"https://github.com/pa-ku/viteplus-template"}
               target="_Blank"
-              className="flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 border-sky-900 bg-sky-800/90 px-2 py-2 text-sky-200"
+              className="border-primary-dark bg-primary-dark/70 text-primary-light flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 px-2 py-2"
             >
               <IconBrandGithub size={26} />
             </a>
@@ -38,11 +37,11 @@ export default function VitePlus() {
               textToCopy={"pnpm dlx degit pa-ku/viteplus-template.git app-name"}
             ></CopyButton>
           </span>
-        
+
           <ul className="flex flex-wrap items-center justify-center gap-5 drop-shadow-xl">
             {stack.map(({ label, path }) => (
               <a
-                className="z-10 w-32 cursor-pointer rounded-xl border-2 border-white/50 bg-white/30 px-3 py-2 text-center text-lg text-white shadow-lg shadow-white/20 duration-300 hover:-translate-y-1"
+                className="z-10 w-32 cursor-pointer rounded-xl border-2 border-white/20 bg-white/20 px-3 py-2 text-center text-lg text-white shadow-lg shadow-white/20 duration-300 hover:-translate-y-0.5"
                 key={label}
                 target="_Blank"
                 href={path}
@@ -63,35 +62,32 @@ export default function VitePlus() {
             tsconfig.app.json and vite.config.json
           </p>
 
-          <p className="flex w-fit items-center justify-center gap-2 rounded-lg  bg-gray-800/50 px-3 py-2 text-white [&_span]:text-gray-300">
+          <p className="flex w-fit items-center justify-center gap-2 rounded-lg bg-gray-800/50 px-3 py-2 text-white [&_span]:text-gray-300">
             <span>import</span> Button <span>from</span> @/components/ui/Button
           </p>
         </section>
 
-<section className="flex flex-col items-center gap-3">
-<h2 className="drop-shadow-white flex items-center justify-center gap-4 pt-10 text-2xl font-bold text-white">
+        <section className="flex flex-col items-center gap-3">
+          <h2 className="drop-shadow-white flex items-center justify-center gap-4 pt-10 text-2xl font-bold text-white">
             Monorepo with Nodejs
           </h2>
-<span className="flex gap-1">
+          <span className="flex gap-1">
             <a
               href={"https://github.com/pa-ku/viteplus-monorepo-template"}
               target="_Blank"
-              className="flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 border-sky-900 bg-sky-800/90 px-2 py-2 text-sky-200"
+              className="border-primary-dark bg-primary-dark/80 flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 px-2 py-2 text-sky-200"
             >
               <IconBrandGithub size={26} />
             </a>
-            <CopyButton
-              textToCopy={monorepo}
-            ></CopyButton>
+            <CopyButton textToCopy={monorepo}></CopyButton>
           </span>
-</section>
+        </section>
 
         <section className="flex flex-col gap-5">
           <h2 className="drop-shadow-white flex items-center justify-center gap-4 pt-10 text-2xl font-bold text-white">
             More Useful packages
           </h2>
 
-         
           <ul className="flex flex-wrap items-center justify-center gap-5 drop-shadow-xl">
             {usefulPkgs.map(({ label, pnpm }) => (
               <div className="text-center text-sky-200" key={label}>
@@ -110,7 +106,7 @@ function CopyButton({ textToCopy }: { textToCopy: string }) {
   const [copied, setCopied] = useState(false)
 
   return (
-    <div className="flex items-center justify-center gap-2 rounded-lg border-2 border-sky-900 bg-sky-800/90 px-3 py-2 text-sky-200">
+    <div className="border-primary-dark bg-primary-dark/90 text-primary-light flex items-center justify-center gap-2 rounded-lg border-2 px-3 py-2">
       <p>{textToCopy}</p>
       <button
         onClick={() => {
